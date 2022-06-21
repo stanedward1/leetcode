@@ -38,4 +38,12 @@ class LeetcodeApplicationTests {
         }
         System.out.println("返回栈中最小元素为：" + mystal.getmin());
     }
+
+    @Test
+    void T1108() {
+        T1108 solution = new T1108();
+        String address = "1.1.1.1";
+        String result = solution.defangIPaddr(address);
+        System.out.println(result);
+    }
 }
