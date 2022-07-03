@@ -27,15 +27,24 @@ class LeetcodeApplicationTests {
     }
 
     @Test
-    void T3(){
+    void T3() {
         T3 solution = new T3();
         System.out.println(solution.lengthOfLongestSubstring("pwwkew"));
     }
 
     @Test
-    void T5(){
+    void T5() {
         T5 solution = new T5();
         System.out.println(solution.longestPalindrome("aaaaaaaaa"));
+    }
+
+    @Test
+    void T438() {
+        String s = "cbaebabacd";
+        String p = "abc";
+        T438 solution = new T438();
+        solution.findAnagrams(s, p);
+        System.out.println(solution.findAnagrams(s, p));
     }
 
     @Test
