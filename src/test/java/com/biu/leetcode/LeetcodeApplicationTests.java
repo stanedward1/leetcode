@@ -1,8 +1,11 @@
 package com.biu.leetcode;
 
-import com.biu.leetcode.zuochengyun.MyStack1;
+import com.biu.leetcode.swordToOffer.reversePrint;
+import com.biu.leetcode.zuoChengYun.MyStack1;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import java.util.Arrays;
 
 @SpringBootTest
 class LeetcodeApplicationTests {
@@ -85,5 +88,17 @@ class LeetcodeApplicationTests {
             System.out.println("压入数据为" + item);
         }
         System.out.println("返回栈中最小元素为：" + mystal.getmin());
+    }
+
+    // swordToOffer
+    @Test
+    void reversePrint() {
+        reversePrint soluton = new reversePrint();
+        ListNode listNode = new ListNode(2);
+        listNode.add(1);
+        listNode.add(3);
+        listNode.add(2);
+        soluton.reversePrint(listNode);
+        System.out.println("result ==> " + Arrays.toString(soluton.reversePrint(listNode)));
     }
 }
