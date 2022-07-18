@@ -1,11 +1,14 @@
 package com.biu.leetcode;
 
-import com.biu.leetcode.swordToOffer.reversePrint;
+import com.biu.leetcode.illustrationOfAlgorithm.isNumber;
+import com.biu.leetcode.illustrationOfAlgorithm.reverseList;
+import com.biu.leetcode.illustrationOfAlgorithm.reversePrint;
 import com.biu.leetcode.zuoChengYun.MyStack1;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Arrays;
+import java.util.Collections;
 
 @SpringBootTest
 class LeetcodeApplicationTests {
@@ -100,5 +103,22 @@ class LeetcodeApplicationTests {
         listNode.add(2);
         soluton.reversePrint(listNode);
         System.out.println("result ==> " + Arrays.toString(soluton.reversePrint(listNode)));
+    }
+
+    @Test
+    void isNumber() {
+        isNumber solution = new isNumber();
+        System.out.println(solution.isNumber(" 0"));
+    }
+
+    @Test
+    void reverseList() {
+        reverseList solution = new reverseList();
+        ListNode listNode = new ListNode(1);
+        listNode.add(2);
+        listNode.add(3);
+        listNode.add(4);
+        listNode.add(5);
+        solution.reverseList(listNode).print();
     }
 }

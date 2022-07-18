@@ -1,4 +1,4 @@
-package com.biu.leetcode.swordToOffer;
+package com.biu.leetcode.illustrationOfAlgorithm;
 
 import com.biu.leetcode.ListNode;
 
