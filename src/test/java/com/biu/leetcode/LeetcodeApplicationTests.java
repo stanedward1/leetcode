@@ -61,6 +61,17 @@ class LeetcodeApplicationTests {
     }
 
     @Test
+    void T731() {
+        T731 MyCalendar = new T731();
+        System.out.println(MyCalendar.book(10, 20));
+        System.out.println(MyCalendar.book(50, 60));
+        System.out.println(MyCalendar.book(10, 40));
+        System.out.println(MyCalendar.book(5, 15));
+        System.out.println(MyCalendar.book(5, 10));
+        System.out.println(MyCalendar.book(25, 55));
+    }
+
+    @Test
     void T1089() {
         T1089 solution = new T1089();
         int[] arr = {1, 9, 2, 3, 4, 5};
