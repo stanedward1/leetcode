@@ -7,8 +7,10 @@ import com.biu.leetcode.zuoChengYun.MyStack1;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 @SpringBootTest
 class LeetcodeApplicationTests {
@@ -42,6 +44,12 @@ class LeetcodeApplicationTests {
     void T5() {
         T5 solution = new T5();
         System.out.println(solution.longestPalindrome("aaaaaaaaa"));
+    }
+
+    @Test
+    void T28(){
+        T28 solution = new T28();
+        System.out.println(solution.strStr("aaaaa","bba"));
     }
 
     @Test
@@ -102,6 +110,15 @@ class LeetcodeApplicationTests {
             System.out.println("压入数据为" + item);
         }
         System.out.println("返回栈中最小元素为：" + mystal.getmin());
+    }
+
+    //Lcp
+    @Test
+    void lcp01(){
+        Lcp01 solution = new Lcp01();
+        int[] guess = new int[]{1, 2, 3};
+        int[] answer = new int[]{1, 2, 3};
+        System.out.println(solution.game(guess, answer));
     }
 
     // swordToOffer
