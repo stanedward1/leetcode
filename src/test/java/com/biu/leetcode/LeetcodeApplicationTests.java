@@ -80,10 +80,25 @@ class LeetcodeApplicationTests {
     }
 
     @Test
+    void T814(){
+        T814 solution = new T814();
+        String str = "[1, 0, 1, 0, 0, 0, 1]";
+        TreeNode node = TreeNode.mkTree(str);
+        System.out.println(solution.pruneTree(node).toString());
+    }
+
+    @Test
     void T1089() {
         T1089 solution = new T1089();
         int[] arr = {1, 9, 2, 3, 4, 5};
         solution.duplicateZeros(arr);
+    }
+
+    @Test
+    void T1260() {
+        T1260 solution = new T1260();
+        int[][] grid = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+        System.out.println(solution.shiftGrid(grid, 1));
     }
 
     @Test
