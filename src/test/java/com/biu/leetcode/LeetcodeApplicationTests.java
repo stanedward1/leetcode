@@ -3,6 +3,7 @@ package com.biu.leetcode;
 import com.biu.leetcode.illustrationOfAlgorithm.isNumber;
 import com.biu.leetcode.illustrationOfAlgorithm.reverseList;
 import com.biu.leetcode.illustrationOfAlgorithm.reversePrint;
+import com.biu.leetcode.swordToOffer.stoT115;
 import com.biu.leetcode.zuoChengYun.MyStack1;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -47,9 +48,9 @@ class LeetcodeApplicationTests {
     }
 
     @Test
-    void T28(){
+    void T28() {
         T28 solution = new T28();
-        System.out.println(solution.strStr("aaaaa","bba"));
+        System.out.println(solution.strStr("aaaaa", "bba"));
     }
 
     @Test
@@ -80,7 +81,7 @@ class LeetcodeApplicationTests {
     }
 
     @Test
-    void T814(){
+    void T814() {
         T814 solution = new T814();
         String str = "[1, 0, 1, 0, 0, 0, 1]";
         TreeNode node = TreeNode.mkTree(str);
@@ -129,14 +130,14 @@ class LeetcodeApplicationTests {
 
     //Lcp
     @Test
-    void lcp01(){
+    void lcp01() {
         Lcp01 solution = new Lcp01();
         int[] guess = new int[]{1, 2, 3};
         int[] answer = new int[]{1, 2, 3};
         System.out.println(solution.game(guess, answer));
     }
 
-    // swordToOffer
+    // illustrationOfAlgorithm
     @Test
     void reversePrint() {
         reversePrint soluton = new reversePrint();
@@ -163,5 +164,15 @@ class LeetcodeApplicationTests {
         listNode.add(4);
         listNode.add(5);
         solution.reverseList(listNode).print();
+    }
+
+    // swordToOffer
+    @Test
+    void stoT115() {
+        stoT115 solution = new stoT115();
+        // nums = [1,2,3], sequences = [[1,2],[1,3]]
+        int[] nums = {1, 2, 3};
+        int[][] sequences = {{}, {}, {}};
+        System.out.println(solution.sequenceReconstruction(nums, sequences));
     }
 }
